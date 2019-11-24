@@ -1,0 +1,8 @@
+---
+
+- name: LEMP provision
+  hosts: all
+  roles:
+    - nginx
+    - mysql
+    - php

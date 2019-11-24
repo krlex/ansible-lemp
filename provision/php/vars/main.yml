@@ -1,0 +1,12 @@
+packages:
+
+  - name: php7.3
+  - name: libapache2-mod-php7.3
+  - name: php7.3-mbstring
+  - name: php7.3-xmlrpc
+  - name: php7.3-soap
+  - name: php7.3-gd
+  - name: php7.3-xml
+  - name: php7.3-cli
+  - name: php7.3-zip
+  - name: curl

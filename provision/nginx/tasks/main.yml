@@ -1,0 +1,14 @@
+---
+- name: Installation Nginx
+  become: yes
+  with_items: "{{ packages }}"
+  apt:
+    pkg: "{{ item.name }}"
+    state: latest
+
+- name: deploy index.html
+  become: yes
+  template:
+    src: "templates/index.html.j2"
+    dest: "/var/www/html/index.html"
+
