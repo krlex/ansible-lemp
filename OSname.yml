@@ -1,0 +1,30 @@
+---
+
+  - name: Debian10
+    box: debian/buster64
+    box_ip: 10.1.10.10
+    memory: 512
+    cpu: 1
+    provision: provision/site.yml
+
+# - name: Ubuntu1804
+#   box: ubuntu/bionic64
+#   box_ip: 10.1.10.20
+#   memory: 512
+#   cpu: 1
+#   provision:
+
+# - name: Fedora32
+#   box: generic/Fedora32
+#   box_ip: 10.1.10.30
+#   memory: 512
+#   cpu: 1
+#   provision:
+
+# - name: CentOS7
+#   box: centos/7
+#   box_ip: 10.1.10.40
+#   memory: 512
+#   cpu: 1
+#   provision:
+
