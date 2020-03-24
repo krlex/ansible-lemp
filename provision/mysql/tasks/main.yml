@@ -1,7 +1,2 @@
----
-- name: Installation mysql
-  become: yes
-  with_items: "{{ packages }}"
-  apt:
-    pkg: "{{ item.name }}"
-    state: latest
+- name: include os specific tasks
+  include_tasks: "{{ ansible_distribution }}.yml"

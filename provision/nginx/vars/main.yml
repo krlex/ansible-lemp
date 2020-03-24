@@ -1,3 +1,7 @@
-packages:
+debian_packages:
+  - name: nginx
+  - name: python-apt
+
+ubuntu_packages:
   - name: nginx
   - name: python-apt
