@@ -1,0 +1,8 @@
+---
+- name: Installation PHP
+  become: yes
+  with_items: "{{ centos_packages }}"
+  package:
+    pkg: "{{ item.name }}"
+    state: latest
+

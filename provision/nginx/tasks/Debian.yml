@@ -1,0 +1,13 @@
+---
+- name: Installation Nginx
+  become: yes
+  with_items: "{{ debian_packages }}"
+  package:
+    pkg: "{{ item.name }}"
+    state: latest
+
+- name: Start Nginx
+  become: yes
+  service:
+    name: nginx
+    state: started

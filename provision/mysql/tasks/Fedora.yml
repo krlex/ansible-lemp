@@ -1,0 +1,7 @@
+---
+- name: Installation MySQL
+  become: yes
+  with_items: "{{ fedora_packages }}"
+  package:
+    pkg: "{{ item.name }}"
+    state: latest

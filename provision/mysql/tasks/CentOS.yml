@@ -1,0 +1,8 @@
+---
+- name: Installation MySQL
+  become: yes
+  with_items: "{{ centos_packages }}"
+  yum:
+    pkg: "{{ item.name }}"
+    state: latest
+

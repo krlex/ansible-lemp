@@ -1,2 +1,16 @@
-packages:
+debian_packages:
+  - name: nginx
+  - name: python-apt
+
+ubuntu_packages:
+  - name: nginx
+  - name: python-apt
+
+centos_packages:
+  - name: nginx
+
+fedora_packages:
+  - name: nginx
+
+freebsd_packages:
   - name: nginx

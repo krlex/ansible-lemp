@@ -1,5 +1,4 @@
-packages:
-
+debian_packages:
   - name: php7.3
   - name: libapache2-mod-php7.3
   - name: php7.3-mbstring
@@ -9,4 +8,45 @@ packages:
   - name: php7.3-xml
   - name: php7.3-cli
   - name: php7.3-zip
+  - name: curl
+
+ubuntu_packages:
+  - name: php
+  - name: libapache2-mod-php
+  - name: php-xmlrpc
+  - name: php-gd
+  - name: php-xml
+  - name: php-cli
+  - name: curl
+
+
+fedora_packages:
+  - name: php
+  - name: php-mbstring
+  - name: php-xmlrpc
+  - name: php-soap
+  - name: php-gd
+  - name: php-xml
+  - name: php-cli
+  - name: php-zip
+  - name: curl
+
+centos_packages:
+  - name: php
+  - name: php-mbstring
+  - name: php-xmlrpc
+  - name: php-soap
+  - name: php-gd
+  - name: php-xml
+  - name: php-cli
+  - name: php-zip
+  - name: curl
+
+freebsd_packages:
+  - name: php73
+  - name: php73-xmlrpc
+  - name: php73-soap
+  - name: php73-gd
+  - name: php73-xml
+  - name: php73-zip
   - name: curl
