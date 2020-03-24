@@ -1,7 +1,13 @@
 ---
+- name: Setup for Nginx installation
+  become: yes
+  template:
+    src: ../templates/nginx.repo.j2
+    dest: /etc/yum.repos.d/nginx.repo
+
 - name: Installation Nginx
   become: yes
-  with_items: "{{ debian_packages }}"
+  with_items: "{{ centos_packages }}"
   package:
     pkg: "{{ item.name }}"
     state: latest

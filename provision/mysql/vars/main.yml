@@ -3,3 +3,12 @@ debian_packages:
 
 ubuntu_packages:
   - name: mysql-server
+
+fedora_packages:
+  - name: mysql-server
+
+centos_packages:
+  - name: mariadb-server
+
+freebsd_packages:
+  - name: mariadb104-server-10.4.12

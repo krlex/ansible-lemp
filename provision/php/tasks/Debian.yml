@@ -1,7 +1,7 @@
 ---
-- name: Installation PHP7.3
+- name: Installation PHP
   become: yes
   with_items: "{{ debian_packages }}"
-  apt:
+  package:
     pkg: "{{ item.name }}"
     state: latest

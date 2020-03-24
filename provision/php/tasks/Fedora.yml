@@ -1,7 +1,7 @@
 ---
-- name: Installation MySQL
+- name: Installation PHP
   become: yes
-  with_items: "{{ ubuntu_packages }}"
+  with_items: "{{ fedora_packages }}"
   package:
     pkg: "{{ item.name }}"
     state: latest

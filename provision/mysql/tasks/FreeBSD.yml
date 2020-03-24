@@ -1,7 +1,8 @@
 ---
 - name: Installation MySQL
   become: yes
-  with_items: "{{ ubuntu_packages }}"
-  package:
+  with_items: "{{ freebsd_packages }}"
+  yum:
     pkg: "{{ item.name }}"
     state: latest
+

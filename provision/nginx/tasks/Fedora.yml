@@ -1,7 +1,7 @@
 ---
 - name: Installation Nginx
   become: yes
-  with_items: "{{ debian_packages }}"
+  with_items: "{{ fedora_packages }}"
   package:
     pkg: "{{ item.name }}"
     state: latest

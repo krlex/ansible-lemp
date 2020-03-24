@@ -1,7 +1,7 @@
 ---
-- name: Installation mysql
+- name: Installation MySQL
   become: yes
   with_items: "{{ debian_packages }}"
-  apt:
+  package:
     pkg: "{{ item.name }}"
     state: latest
