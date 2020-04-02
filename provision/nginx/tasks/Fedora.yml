@@ -11,3 +11,23 @@
   service:
     name: nginx
     state: started
+
+- name: setup http in firewall
+  become: yes
+  firewalld:
+    service: http
+    permanent: yes
+    zone: public
+    state: enabled
+
+- name: setup tcp in firewall
+  become: yes
+  firewalld:
+    port: 433/tcp
+    permanent: yes
+    zone: public
+    state: enabled
+
+- name: Reload firewall
+  become: yes
+  command: firewalld-cmd --reload
