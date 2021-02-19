@@ -1,18 +1,18 @@
 ---
 
-  - name: freebsd
-    box: krlex/freebsd-12.1.2-zfs
-    box_ip: 10.1.20.10
-    memory: 512
-    cpu: 1
-    provision: provision/site.yml
+    # - name: freebsd
+    #   box: krlex/freebsd-12.1-zfs
+    #   box_ip: 10.1.20.10
+    #   memory: 512
+    #   cpu: 1
+    #   provision: provision/site.yml
 
-    #  - name: debian
-    #    box: debian/buster64
-    #    box_ip: 10.1.10.10
-    #    memory: 512
-    #    cpu: 1
-    #    provision: provision/site.yml
+    - name: debian
+      box: debian/buster64
+      box_ip: 10.1.10.10
+      memory: 512
+      cpu: 1
+      provision: provision/site.yml
 
     #  - name: ubuntu
     #    box: ubuntu/bionic64
