@@ -1,0 +1,23 @@
+
+name: Ansible installation NGINX
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+        description: 'Create new LEMP'
+        default: 'Master'
+        required: true
+
+jobs:
+  greet:
+    runs-on: ubuntu-18.04
+
+    steps:
+    - name: Start installation
+      run: | apt update && apt upgrade -y && apt install python3-pip -y 
+      
+    - name: Install ansible
+      run: | pip3 install -U ansible
+      
+    - name: Ansible starts
+      run: | ansible-playbook -i hosts provision/site.yml -c local 
