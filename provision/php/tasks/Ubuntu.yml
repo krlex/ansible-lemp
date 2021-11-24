@@ -1,4 +1,8 @@
 ---
+- name: Before install PHP Update
+  become: yes
+  shell: apt update
+
 - name: Installation PHP
   become: yes
   with_items: "{{ ubuntu_packages }}"
